@@ -6,7 +6,7 @@
 *{
 box-sizing: border-box;   
 margin:0;
-padding:0; 
+
 font-family: 'Poppins', sans-serif;
 
 }
@@ -21,14 +21,14 @@ a{
   left:40px;
   z-index: 2;
   background-color: white;
-  padding:25px;
+  padding:10px 15px;
   border-radius:50%;
 box-shadow:0px 4px 4px black;
 box-sizing: border-box;
 margin:0;
 
 .fas{
-  font-size: 20px;
+  font-size: 15px;
   color:black;
 }
 }
@@ -51,17 +51,16 @@ margin:0;
 
 
 .background2{
-  background-image:url('images/background2.png') ;
+  background-image:url('images/background3.jpg') ;
   width: 100%;
   height: 100%;
-  background-position: center ;
-   background-repeat: repeat;
-   background-size:100% ;
+background-size: cover;
+   background-repeat: no-repeat;
+background-position: center;
    position:absolute;
    top:0;                     
    left:0;
- opacity:.6;
-   filter: blur(3px);
+
    z-index: -1;  
 
 
@@ -73,6 +72,7 @@ margin:0;
     flex-direction: column;
     overflow: hidden;
     min-height: calc(100vh + 100px);
+
     position: relative;
 
 
@@ -83,6 +83,9 @@ margin:0;
     width: 100%;
   padding: 10px 0px;
     flex:1;
+    position: relative;
+
+
 
  
 }
@@ -94,9 +97,7 @@ margin:0;
     
     &__picture{
       transition: 2s;
-      &:hover{
-        transform: rotate(360deg);
-      }
+   
         width: 100px;
         img{
             width: 100%;
@@ -104,6 +105,8 @@ margin:0;
     }
 &__text{
     text-align: center;
+    margin-bottom: 100px;
+
 
     
     p{
@@ -111,10 +114,13 @@ margin:0;
         color:white;
         text-shadow: 2px 2px 2px black;
         font-weight: 400;
+        font-family: 'Dancing Script', cursive;
+        font-size: 4em;
+
     
         
 &.title{
-    font-size: 20px;
+    font-size: 2em;
   
   
 }
@@ -124,8 +130,11 @@ margin:0;
 .secound-row{
 
     @include flexCenter();
+    flex-direction: column;
     width: 100%;
     flex:3;
+ 
+
   
 }
 .cbox{
@@ -133,28 +142,34 @@ margin:0;
     flex-direction: column;
     justify-content: stretch;
  
-    width: 50vw;
-    max-width:600px;
+    width: 70vw;
+    max-width:700px;
    height: 50vh;
+   max-height: 700px;
+
 
 
 
     &__box{
       @include flexCenter();
-
+cursor:pointer;
       background-position: center;
       background-repeat: no-repeat;
       background-size:cover;
       width: 100%;
-      height: 100%;
-      border:2px solid black;
+      height: 70%;
+      border:2px solid white;
       flex:1;
       opacity:.7;
       transition: .6s ease;
      
      p{
-      text-shadow: 0px 4px 4px #ffffff;
+      font-family: 'Dancing Script', cursive;
+
+      // text-shadow: 0px 4px 4px #ffffff;
+      font-size: 4em;
       font-weight: 500;
+      color: white;
 
      }
    
@@ -173,100 +188,58 @@ margin:0;
       }
       &.box1{
         animation:first_effect 3s ;
-        background-image: url('images/box_1.JPG');
+        background-image: url('images/opt1.JPG');
       }
       &.box2{
         animation:secound_effect 3s  ;
-        background-image: url('images/box_2.JPG');
+        background-image: url('images/opt2.JPG');
       }
       &.box3{
        animation:thirt_effect 3s  ;
-       background-image: url('images/box_3.JPG');
+       background-image: url('images/opt3.JPG');
       }
-      p{
-
-        font-size: 50px;
-
-      }
+    
     }
 }
 
 
 .sbox{
- display: flex;
- flex-wrap: wrap;
- flex-direction: column;
-
- width: 50vw;
- max-width:1000px;
-height: 40vh;
- 
+  @include flexCenter();
+  flex-direction: row;
   justify-content: stretch;
+flex-wrap: wrap;
+  width: 70vw;
+  max-width:1000px;
+ height: 30vh;
+ max-height: 900px;
+
+text-align: center;
 
 
-
-  &__up{
-    width: 100%;
-    @include flexCenter();
-
-    flex:1;
-    &--left{
-      animation:first_effect  1.5s ;
-      
-      height: 100%;
-     background-image: url('images/sbox_1.png');
-    background-color: aqua;
-      flex:1;
-    }
-    &--right{
-      animation:secound_effect  1.5s ;
-     
-      height: 100%;
-      background-color: aquamarine;
-
-      background-image: url('images/sbox_2.png');
-      flex:1;
-    }
-  }
-  &__down{ 
   
-    width: 100%;
-    @include flexCenter();
-
-    flex: 1;
-    &--left{
-      animation:thirt_effect 1.5s ;
-      height: 100%;
-      background-color: burlywood;
-
-      background-image: url('images/sbox_3.png');
-      flex:1;
-    }
-    &--right{
-      animation:four_effect  1.5s ;
-      height: 100%;
-      background-color: chartreuse;
-
-      background-image: url('images/sbox_4.png');
-      flex:1;
-    }
-  }
   .sbox__box{
     @include flexCenter();
     flex-direction: column;
+    width: 50%;
+    min-height: 100px;
+    border:2px solid black;
+    height: 50%;
+    opacity:.7;
+    cursor:pointer;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    border: 2px solid black;
-    opacity:.5;
-    transition: .5s;
-    width: 100%;
-    text-align: center;
+    background-size: cover;
     p{
-      font-size: 40px;
-      text-shadow: 0px 4px 4px white;
+    
+    
+      font-size: 1em;
+      text-shadow: 0px 4px 4px black;
       &.title{
-        font-size: 25px;
+      
+        font-size: 2em;
+      }
+      &.titlesmall{
+        font-size: 1.3em;
+        padding-bottom: 0;
       }
     }
     &:hover{
@@ -278,21 +251,39 @@ height: 40vh;
     }
   }
 }
-.weddingplanner{
+.sbox1{
+  background-image:url('images/opt2_1.jpg');
 
-  margin-top: 50px;
+}
+.sbox2{
+  background-image:url('images/opt2_2.jpg');
+
+}
+.sbox3{
+  background-image:url('images//opt2_3.jpg');
+
+}
+.sbox4{
+  background-image:url('images/opt2_4.jpg');
+
+}
+.weddingplanner{
+@include flexCenter();
+flex-direction: column;
+
+
  
 
   &__photo{
    
  
-    background-image:url('images/sbox_1.png');
+    background-image:url('images/sbox_1.jpg');
 
 
 
 
 img{
-  width: 100%;
+  width: 80%;
   height: 500px;
 }
   }
@@ -302,26 +293,31 @@ img{
   @include flexCenter();
   flex-direction: column;
   width: 100%;
-  padding:5vw 25vw;
+  padding: 50px 20vw;
+
+
 
 
 
   
   p{
     color:black;
-    padding:10px;
-    font-size: 25px;
+    margin-top: 20px;
+
+
+
+
  
 
  &.title{
-   font-size: 40px;
+   font-size: 2em;
    font-weight: 400;
-   margin-left:-30vw;
+margin-top:80px;
  } 
  &.cennik__title{
-  font-size: 40px;
+  font-size: 2em;
   font-weight: 500;
-  margin-left:-30vw;
+
  }
  span{
    font-weight: bold;
@@ -335,16 +331,33 @@ img{
   }
   
 }
-.photo__properties{  background-size:  cover;
+.photo__properties{  
+
+  background-size:  cover;
   background-repeat: no-repeat;
   background-position: center;
   width:100%;
-  height: 700px;}
+  height: 50vh;
+  }
+.social_media{
+  @include flexCenter();
+  width:50px;
+  min-height: 50px;
+  img{
+    width: 100%;
+    height: auto;
+    margin:10px;
+  }
+}
 
+.imprezyfirmowe, .imprezyokolicznosciowe, .imprezykinder, .contact, .aboutus, .contact{
+  @include flexCenter();
+  flex-direction: column;
 
-
+}
 .imprezyfirmowe__photo{
   background-image: url('images/sbox_2.JPG');
+  
 
 }
 .imprezyokolicznosciowe__photo{
@@ -374,9 +387,9 @@ height: 100%;
       }
     }
     &__text{
-      padding:5vw 25vw;
+
       p{
-        font-size: 20px;
+        padding: 50px 10vw;
         span{
           font-weight: bold;
         }
@@ -391,15 +404,16 @@ height: 100%;
   height:100%;
 
 
-width: 100vw;
   padding-bottom: 5vh;
   &__info{
     display: flex;
      flex-direction: column;
- min-height: 515px;
-    min-width: 350px;
-    max-width: 350px;
-     flex:1;
+     width: 20%;
+     height: 550px;
+
+
+
+
      margin:20px;
      background-color: #CF91A1;
      text-align: center;
@@ -408,15 +422,13 @@ width: 100vw;
    
    }
    &__title{
-    
+    font-size: 1.2em;
     padding-bottom: 25px;
     color:white;
   }
-    p{
-      font-size: 20px;
-    }
+ 
     li{
-      font-size: 14px;
+      font-size: 1em;
       color:white;
       padding-bottom: 20px;
      
@@ -424,7 +436,7 @@ width: 100vw;
 }
 .cennik{
   &__title{
-  
+  font-size: 2em;
   }
 }
  .footer{
@@ -432,13 +444,14 @@ width: 100vw;
 @include flexCenter();
    width: 100%;
    min-height: 100px;
+   padding: 20px;
 
    background-color:#CF91A1 ;
    border-radius: 0px 0px 25px 25px;
    text-align: center;
    p{
      color:white;
-     font-size: 18px;
+     font-size: 1em;
      font-weight: 400;
    }
    img{
@@ -446,47 +459,153 @@ width: 100vw;
      margin-right: 30px;
    }
  }
+ .slider{
+   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 80vw;
+  max-width: 400px;
+min-height: 350px;
+  background-color:#CF91A1;
+margin-bottom:50px;
+  border-radius: 25px;
+  text-align: center;
+  span{
+      font-size:1.5em;
+      font-weight: 500;
+  }
+}
+
+.tekst{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex:3;
+
+  p{
+    font-size: 1em;
+    color:white;
+      position: absolute;
+      padding:40px;
+      transition: opacity 1s ease-in; 
+  }
+}
+.podpis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  flex:1;
+
+  p{
+      position: absolute;
+      transition: opacity 1s ease-in; 
+      font-size: 1.5em;
+      font-weight: bold;
+      color:white;
+  }
+}
 
 
+.text + .text { opacity: 0; }
+.pdp+ .pdp{ opacity: 0; }
+.font__size{
+  font-size: 1.15em;
+  margin:50px 0px;
+  line-height: 2em;
+
+
+}
+.animation1{
+  animation:first_effect 1.5s ;
+}
+.animation2{
+  animation:secound_effect 1.5s ;
+}
+.animation3{
+  animation:thirt_effect 1.5s ;
+}
+.animation4{
+  animation:four_effect 1.5s ;
+}
+
+ @media all and (max-width:1700px) {
+  .blocks .blocks__info{width: 40%;height: 400px;}
+}
+@media all and (max-width:1550px) {
+ .blocks .blocks__info{width: 50%;height: 100%;}
+}
+
+
+ @media all and (min-width:1400px) {
+  .font__size{ font-size: 1.3em;}
+  .background2{opacity: .7;filter: blur(2px);}
+  
+   }
 
  @media all and (orientation:portrait) {
 
   .background{background-size:cover;
   background-repeat: repeat;}
   .cbox .cbox__box {opacity: 1;}
-  .sbox__up, .sbox__down,.sbox{flex-direction: column; height: 100%;}
-  .sbox .sbox__box {opacity: 1;}
-  .sbox .sbox__box p {color:white; text-shadow:2px 2px 2px black;font-size: 20px;padding:5px;}
+  .cbox .cbox__box p {font-size: 40px;}
+  .sbox{flex-direction: column; height: 100%;}
+  .sbox .sbox__box {opacity: 1; width: 100%; }
+  .sbox .sbox__box p {color:white; text-shadow:2px 2px 2px black;padding:5px;}
   .event__text, .aboutus__text, .cennik__text {padding:5vw;}
   .event__text p.title, .event__text p.cennik__title {margin:0; padding:0;margin-top: 50px;}
   .event__text p{margin:0; padding:0;margin-top: 10px; text-align: center;}
   .event__text li{text-align: center; padding-bottom: 5px;}
-  .photo__properties{height: 40vh;}
-  .blocks__info{align-items: center; justify-content: center;}
+  .photo__properties{height: 50vw;}
+  .blocks .blocks__info{width: 80%;height: 100%;}
+  .footer p {font-size: 12px;}
+  .font__size {font-size: 1em}
    }
-
-
+   @media all and (max-width:450px) {
+  *{padding:0; }
+  ul li{list-style-type: none;}
+  .aboutus__text, .event__text{text-align: center;}
+    .sbox .sbox__box p.title {
+      font-size: 1.5em;
+  }
+  .tekst p {font-size: .7em;}
+  .podpis p {font-size: 1em;}
+  .cbox .cbox__box p{font-size: 2.5em;}
+     }
+     @media all and (max-width:625px) {
+      .sbox .sbox__box p.titlesmall {
+        font-size: 1.2em;
+    }
+       }
 
 @keyframes first_effect {
   0%   {display:none;opacity:0}
  
-  100% {opacity:.7}
+  100% {opacity:1}
 }
 @keyframes secound_effect {
   0%   {display:none;opacity:0}
   25% {opacity:0}
-   100% {opacity:.7}
+   100% {opacity:1}
 }
+
 
 @keyframes thirt_effect {
   0%   {display:none;opacity:0}
   50%   {display:none;opacity:0}
-  100% {display:block;opacity:.7}
+  100% {display:block;opacity:1}
 }
 @keyframes four_effect {
   0%   {display:none;opacity:0}
   75%   {display:none;opacity:0}
-  100% {display:block;opacity:.7}
+  100% {display:block;opacity:1}
 }
 
 

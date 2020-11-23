@@ -189,15 +189,15 @@ cursor:pointer;
       }
       &.box1{
         animation:first_effect 3s ;
-        background-image: url('images/box1miniature.jpg');
+        background-image: url('images/opt1.jpg');
       }
       &.box2{
         animation:secound_effect 3s  ;
-        background-image: url('images/box2miniature.jpg');
+        background-image: url('images/opt2.jpg');
       }
       &.box3{
        animation:thirt_effect 3s  ;
-       background-image: url('images/box3miniature.jpg');
+       background-image: url('images/opt3.jpg');
       }
     
     }
@@ -278,7 +278,7 @@ flex-direction: column;
   &__photo{
    
  
-    background-image:url('images/sbox_1.jpg');
+    background-image:url('images/sbox_1.JPG');
 
 
 

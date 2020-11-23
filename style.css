@@ -231,19 +231,19 @@ a {
 .cbox__box.box1 {
   -webkit-animation: first_effect 3s;
           animation: first_effect 3s;
-  background-image: url("images/box1miniature.jpg");
+  background-image: url("images/opt1.jpg");
 }
 
 .cbox__box.box2 {
   -webkit-animation: secound_effect 3s;
           animation: secound_effect 3s;
-  background-image: url("images/box2miniature.jpg");
+  background-image: url("images/opt2.jpg");
 }
 
 .cbox__box.box3 {
   -webkit-animation: thirt_effect 3s;
           animation: thirt_effect 3s;
-  background-image: url("images/box3miniature.jpg");
+  background-image: url("images/opt3.jpg");
 }
 
 .sbox {
@@ -353,7 +353,7 @@ a {
 }
 
 .weddingplanner__photo {
-  background-image: url("images/sbox_1.jpg");
+  background-image: url("images/sbox_1.JPG");
 }
 
 .weddingplanner__photo img {

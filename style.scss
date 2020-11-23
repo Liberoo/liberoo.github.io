@@ -146,6 +146,7 @@ background-position: center;
     max-width:700px;
    height: 50vh;
    max-height: 700px;
+   margin-bottom: 50px;
 
 
 
@@ -188,15 +189,15 @@ cursor:pointer;
       }
       &.box1{
         animation:first_effect 3s ;
-        background-image: url('images/opt1.JPG');
+        background-image: url('images/box1miniature.JPG');
       }
       &.box2{
         animation:secound_effect 3s  ;
-        background-image: url('images/opt2.JPG');
+        background-image: url('images/box2miniature.JPG');
       }
       &.box3{
        animation:thirt_effect 3s  ;
-       background-image: url('images/opt3.JPG');
+       background-image: url('images/box3miniature.JPG');
       }
     
     }
@@ -212,7 +213,7 @@ flex-wrap: wrap;
   max-width:1000px;
  height: 30vh;
  max-height: 900px;
-
+margin-bottom: 50px;
 text-align: center;
 
 
@@ -551,7 +552,7 @@ margin-bottom:50px;
    }
 
  @media all and (orientation:portrait) {
-
+.logo__text{margin-bottom: 10px;}
   .background{background-size:cover;
   background-repeat: repeat;}
   .cbox .cbox__box {opacity: 1;}

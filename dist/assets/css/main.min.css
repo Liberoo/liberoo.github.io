@@ -114,12 +114,13 @@ h6 {
       font-size: 30px;
       color: white;
       text-shadow: 2px 2px 2px black;
-      font-weight: 400;
-      font-family: 'Dancing Script', cursive;
+      font-weight: 300;
+      font-family: 'Poppins', cursive;
       font-size: 4em; }
       .logo__text p.title {
         text-transform: inherit;
-        font-size: 2em; }
+        font-size: 2em;
+        font-family: 'Courgette', cursive; }
 
 * {
   box-sizing: border-box;
@@ -190,7 +191,8 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 50px 20vw; }
+  padding: 0px 20vw;
+  margin: 0 auto; }
   .event__text p {
     color: black;
     margin-top: 20px; }
@@ -327,7 +329,7 @@ a {
     opacity: .7;
     transition: .6s ease; }
     .cbox__box p {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Courgette', cursive;
       font-size: 4em;
       font-weight: 500;
       color: white; }
@@ -374,13 +376,15 @@ a {
     background-position: center;
     background-size: cover; }
     .sbox .sbox__box p {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.5em;
+      font-family: 'Poppins', cursive;
+      font-size: 1em;
       text-shadow: 0px 4px 4px black; }
       .sbox .sbox__box p.title {
-        font-size: 2em; }
+        font-family: 'Courgette', cursive;
+        font-size: 2.5em; }
       .sbox .sbox__box p.titlesmall {
-        font-size: 1.3em;
+        font-size: 1.6em;
+        font-family: 'Courgette', cursive;
         padding-bottom: 0; }
     .sbox .sbox__box:hover {
       opacity: 1; }
@@ -541,7 +545,7 @@ a {
   width: 100%;
   flex: 1; }
   .podpis p {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Courgette', cursive;
     position: absolute;
     transition: opacity 1s ease-in;
     font-size: 1.5em;
@@ -613,7 +617,10 @@ a {
     text-shadow: 2px 2px 2px black;
     padding: 5px; }
   .event__text, .aboutus__text, .cennik__text {
-    padding: 5vw; }
+    padding: 10px 20px;
+    margin: 0; }
+  .aboutus__text p {
+    padding: 20px 0; }
   .event__text p.title, .event__text p.cennik__title {
     margin: 0;
     padding: 0;

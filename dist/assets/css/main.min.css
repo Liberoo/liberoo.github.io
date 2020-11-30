@@ -384,7 +384,8 @@ a {
         font-family: 'Courgette', cursive;
         font-size: 2em; }
       .sbox .sbox__box p.titlesmall {
-        font-size: 1.3em;
+        font-family: 'Courgette', cursive;
+        font-size: 1.8em;
         padding-bottom: 0; }
     .sbox .sbox__box:hover {
       opacity: 1; }

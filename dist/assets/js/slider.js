@@ -1,0 +1,1 @@
+"use strict";var current=0,slides=document.getElementsByClassName("text");slides2=document.getElementsByClassName("pdp"),setInterval(function(){for(var e=0;e<slides.length;e++)slides[e].style.opacity=0,slides2[e].style.opacity=0;current=current!=slides.length-1?current+1:0,slides[current].style.opacity=1,slides2[current].style.opacity=1},6e3);

@@ -1,0 +1,1 @@
+"use strict";app.common={mainInit:function(){console.log("ES6 is working")}},$(function(){$(document).ready(function(){app.common.mainInit()})});

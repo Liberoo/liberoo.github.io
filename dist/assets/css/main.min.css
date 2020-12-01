@@ -135,10 +135,12 @@ h6 {
   width: 100%;
   min-height: 100px;
   padding: 20px;
+  margin: 0;
   background-color: #CF91A1;
   border-radius: 0px 0px 25px 25px;
   text-align: center; }
   .footer p {
+    display: block;
     color: white;
     font-size: 1em;
     font-weight: 400; }
@@ -369,7 +371,7 @@ a {
     flex-direction: column;
     width: 50%;
     min-height: 100px;
-    border: 2px solid black;
+    border: 2px solid white;
     height: 50%;
     opacity: .7;
     cursor: pointer;
@@ -516,7 +518,7 @@ a {
   align-items: center;
   width: 80vw;
   max-width: 400px;
-  min-height: 350px;
+  min-height: 400px;
   background-color: #CF91A1;
   margin-bottom: 50px;
   border-radius: 25px;
@@ -536,6 +538,7 @@ a {
     font-size: 1em;
     color: white;
     position: absolute;
+    width: 100%;
     padding: 40px;
     transition: opacity 1s ease-in; }
 
